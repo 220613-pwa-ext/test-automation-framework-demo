@@ -1,5 +1,6 @@
 package com.revature.testcases;
 
+import com.revature.pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -43,16 +44,13 @@ public class LoginTests {
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
 
         // Step 2: Enter username and password
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("john_doe");
-        passwordInput.sendKeys("abc12345");
+        loginPage.typeUsername("john_doe");
+        loginPage.typePassword("abc12345");
 
         // Step 3: Click login
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         // Check expected v. actual
         // See what URL we are on
@@ -71,16 +69,13 @@ public class LoginTests {
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
 
         // Step 2: Enter username and password
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("jane_doe");
-        passwordInput.sendKeys("password123");
+        loginPage.typeUsername("fgdfljqwekr");
+        loginPage.typePassword("abc12345");
 
         // Step 3: Click login
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         // Check expected v. actual
         // See what URL we are on
@@ -99,16 +94,13 @@ public class LoginTests {
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
 
         // Step 2: Enter username and password
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("testing123");
-        passwordInput.sendKeys("test");
+        loginPage.typeUsername("fgdfljqwekr");
+        loginPage.typePassword("abc12345");
 
         // Step 3: Click login
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         // Check expected v. actual
         // See what URL we are on
@@ -125,14 +117,12 @@ public class LoginTests {
     public void validUsernameInvalidPassword() {
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("john_doe");
-        passwordInput.sendKeys("asdfsdf");
+        loginPage.typeUsername("fgdfljqwekr");
+        loginPage.typePassword("abc12345");
 
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
         wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='error-message']/p")));
@@ -148,14 +138,12 @@ public class LoginTests {
     public void invalidUsernameInvalidPassword() {
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("fgdfljqwekr");
-        passwordInput.sendKeys("asdfsdf");
+        loginPage.typeUsername("fgdfljqwekr");
+        loginPage.typePassword("abc12345");
 
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
         wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='error-message']/p")));
@@ -171,14 +159,12 @@ public class LoginTests {
     public void invalidUsernameValidPassword() {
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("fgdfljqwekr");
-        passwordInput.sendKeys("abc12345");
+        loginPage.typeUsername("fgdfljqwekr");
+        loginPage.typePassword("abc12345");
 
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
         wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='error-message']/p")));
