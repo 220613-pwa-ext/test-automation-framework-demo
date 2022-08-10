@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -18,7 +19,10 @@ public class LoginTests {
     public void validLogin() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
 
         // Step 1: go to login page
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
@@ -56,7 +60,10 @@ public class LoginTests {
         // Write some code to automate the test case
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
 
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
@@ -86,7 +93,10 @@ public class LoginTests {
         // Write some code to automate the test case
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
 
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
@@ -116,7 +126,10 @@ public class LoginTests {
         // Write some code to automate the test case
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
 
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
