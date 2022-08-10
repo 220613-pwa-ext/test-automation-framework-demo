@@ -54,6 +54,85 @@ public class LoginTests {
         // driver.close does not quit the driver, it only closes the Window
         // So, you really should be using driver.quit(), not driver.close()
     }
+    @Test
+    public void validLogin2() throws InterruptedException {
+        WebDriverManager.chromedriver().setup();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
+
+        // Step 1: go to login page
+        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
+
+        // Step 2: Enter username and password
+        WebElement usernameInput = driver.findElement(By.id("username"));
+        WebElement passwordInput = driver.findElement(By.id("password"));
+
+        usernameInput.sendKeys("jane_doe");
+        passwordInput.sendKeys("password123");
+
+        // Step 3: Click login
+        WebElement loginButton = driver.findElement(By.id("login-btn"));
+
+        loginButton.click();
+
+        // Check expected v. actual
+        // See what URL we are on
+        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10)); // wait for a maximum of 10 seconds
+        // check every 500ms to see if some condition occurred
+        wdw.until(ExpectedConditions.urlContains("success.html"));
+
+        String actual = driver.getCurrentUrl();
+        String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
+        Assert.assertEquals(actual, expected);
+
+        driver.quit();
+        // There's also something known as driver.close()
+        // driver.close does not quit the driver, it only closes the Window
+        // So, you really should be using driver.quit(), not driver.close()
+    }
+
+    @Test
+    public void validLogin3() throws InterruptedException {
+        WebDriverManager.chromedriver().setup();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
+
+        // Step 1: go to login page
+        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
+
+        // Step 2: Enter username and password
+        WebElement usernameInput = driver.findElement(By.id("username"));
+        WebElement passwordInput = driver.findElement(By.id("password"));
+
+        usernameInput.sendKeys("testing123");
+        passwordInput.sendKeys("test");
+
+        // Step 3: Click login
+        WebElement loginButton = driver.findElement(By.id("login-btn"));
+
+        loginButton.click();
+
+        // Check expected v. actual
+        // See what URL we are on
+        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10)); // wait for a maximum of 10 seconds
+        // check every 500ms to see if some condition occurred
+        wdw.until(ExpectedConditions.urlContains("success.html"));
+
+        String actual = driver.getCurrentUrl();
+        String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
+        Assert.assertEquals(actual, expected);
+
+        driver.quit();
+        // There's also something known as driver.close()
+        // driver.close does not quit the driver, it only closes the Window
+        // So, you really should be using driver.quit(), not driver.close()
+    }
 
     @Test
     public void validUsernameInvalidPassword() {
