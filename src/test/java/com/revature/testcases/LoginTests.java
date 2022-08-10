@@ -9,21 +9,36 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
 public class LoginTests {
 
-    @Test
-    public void validLogin() throws InterruptedException {
+    public WebDriver driver;
+
+    @BeforeMethod
+    public void beforeMethod() {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
 
-        WebDriver driver = new ChromeDriver(options);
+        driver = new ChromeDriver(options);
+    }
 
+    @AfterMethod
+    public void afterMethod() {
+        driver.quit();
+        // There's also something known as driver.close()
+        // driver.close does not quit the driver, it only closes the Window
+        // So, you really should be using driver.quit(), not driver.close()
+    }
+
+    @Test
+    public void validLogin() {
         // Step 1: go to login page
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
 
@@ -48,21 +63,10 @@ public class LoginTests {
         String actual = driver.getCurrentUrl();
         String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
         Assert.assertEquals(actual, expected);
-
-        driver.quit();
-        // There's also something known as driver.close()
-        // driver.close does not quit the driver, it only closes the Window
-        // So, you really should be using driver.quit(), not driver.close()
     }
+
     @Test
-    public void validLogin2() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-
-        WebDriver driver = new ChromeDriver(options);
-
+    public void validLogin2() {
         // Step 1: go to login page
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
 
@@ -87,22 +91,10 @@ public class LoginTests {
         String actual = driver.getCurrentUrl();
         String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
         Assert.assertEquals(actual, expected);
-
-        driver.quit();
-        // There's also something known as driver.close()
-        // driver.close does not quit the driver, it only closes the Window
-        // So, you really should be using driver.quit(), not driver.close()
     }
 
     @Test
-    public void validLogin3() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-
-        WebDriver driver = new ChromeDriver(options);
-
+    public void validLogin3() {
         // Step 1: go to login page
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
 
@@ -127,23 +119,10 @@ public class LoginTests {
         String actual = driver.getCurrentUrl();
         String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
         Assert.assertEquals(actual, expected);
-
-        driver.quit();
-        // There's also something known as driver.close()
-        // driver.close does not quit the driver, it only closes the Window
-        // So, you really should be using driver.quit(), not driver.close()
     }
 
     @Test
     public void validUsernameInvalidPassword() {
-        // Write some code to automate the test case
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-
-        WebDriver driver = new ChromeDriver(options);
-
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
         WebElement usernameInput = driver.findElement(By.id("username"));
@@ -163,20 +142,10 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
-
-        driver.quit();
     }
 
     @Test
     public void invalidUsernameInvalidPassword() {
-        // Write some code to automate the test case
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-
-        WebDriver driver = new ChromeDriver(options);
-
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
         WebElement usernameInput = driver.findElement(By.id("username"));
@@ -196,20 +165,10 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
-
-        driver.quit();
     }
 
     @Test
     public void invalidUsernameValidPassword() {
-        // Write some code to automate the test case
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-
-        WebDriver driver = new ChromeDriver(options);
-
         driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
 
         WebElement usernameInput = driver.findElement(By.id("username"));
@@ -229,8 +188,6 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
-
-        driver.quit();
     }
 
 }
