@@ -95,11 +95,6 @@ public class LoginTests {
     }
 
     @Test
-    public void myFakeFailingTest() {
-        Assert.fail();
-    }
-
-    @Test
     public void validLogin3() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
 
