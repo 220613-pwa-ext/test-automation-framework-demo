@@ -94,6 +94,7 @@ public class LoginTests {
         // So, you really should be using driver.quit(), not driver.close()
     }
 
+    
     @Test
     public void validLogin3() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
