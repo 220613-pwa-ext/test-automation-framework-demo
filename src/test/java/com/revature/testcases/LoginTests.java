@@ -71,8 +71,8 @@ public class LoginTests {
         // Step 2: Enter username and password
         LoginPage loginPage = new LoginPage(driver);
 
-        loginPage.typeUsername("fgdfljqwekr");
-        loginPage.typePassword("abc12345");
+        loginPage.typeUsername("jane_doe");
+        loginPage.typePassword("password123");
 
         // Step 3: Click login
         loginPage.clickLoginButton();
@@ -96,8 +96,8 @@ public class LoginTests {
         // Step 2: Enter username and password
         LoginPage loginPage = new LoginPage(driver);
 
-        loginPage.typeUsername("fgdfljqwekr");
-        loginPage.typePassword("abc12345");
+        loginPage.typeUsername("testing123");
+        loginPage.typePassword("test");
 
         // Step 3: Click login
         loginPage.clickLoginButton();
