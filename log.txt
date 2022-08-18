@@ -16,3 +16,98 @@
 [Aug 11 2022 - 12:25:24] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
 [Aug 11 2022 - 12:25:24] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
 [Aug 11 2022 - 12:25:26] [main] INFO  com.revature.listeners.TestListener - validUsernameInvalidPassword passed
+[Aug 18 2022 - 11:04:41] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\revature\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[Aug 18 2022 - 11:04:43] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:04:43] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:04:52] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:04:52] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:04:55] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:04:55] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:04:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:04:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:05:01] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:05:01] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:05:04] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:05:04] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:13:13] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\revature\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[Aug 18 2022 - 11:17:56] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\revature\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[Aug 18 2022 - 11:25:15] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\revature\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[Aug 18 2022 - 11:25:16] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:25:16] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:02] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:02] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:08] [main] INFO  com.revature.listeners.TestListener - runScenario passed
+[Aug 18 2022 - 11:27:37] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:37] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:46] [main] INFO  com.revature.listeners.TestListener - invalidUsernameInvalidPassword passed
+[Aug 18 2022 - 11:27:47] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:47] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:49] [main] INFO  com.revature.listeners.TestListener - invalidUsernameValidPassword passed
+[Aug 18 2022 - 11:27:50] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:50] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:52] [main] INFO  com.revature.listeners.TestListener - validLogin passed
+[Aug 18 2022 - 11:27:53] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:53] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:55] [main] INFO  com.revature.listeners.TestListener - validLogin2 passed
+[Aug 18 2022 - 11:27:56] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:56] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:27:58] [main] INFO  com.revature.listeners.TestListener - validLogin3 passed
+[Aug 18 2022 - 11:27:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:27:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:28:00] [main] INFO  com.revature.listeners.TestListener - validUsernameInvalidPassword passed
+[Aug 18 2022 - 11:37:40] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:37:40] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:37:46] [main] INFO  com.revature.listeners.TestListener - runScenario passed
+[Aug 18 2022 - 11:37:46] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:37:46] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:37:49] [main] INFO  com.revature.listeners.TestListener - runScenario passed
+[Aug 18 2022 - 11:37:50] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:37:50] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:37:54] [main] INFO  com.revature.listeners.TestListener - invalidUsernameInvalidPassword passed
+[Aug 18 2022 - 11:37:55] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:37:55] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:37:57] [main] INFO  com.revature.listeners.TestListener - invalidUsernameValidPassword passed
+[Aug 18 2022 - 11:37:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:37:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:38:00] [main] INFO  com.revature.listeners.TestListener - validLogin passed
+[Aug 18 2022 - 11:38:00] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:38:00] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:38:02] [main] INFO  com.revature.listeners.TestListener - validLogin2 passed
+[Aug 18 2022 - 11:38:03] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:38:03] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:38:06] [main] INFO  com.revature.listeners.TestListener - validLogin3 passed
+[Aug 18 2022 - 11:38:06] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:38:06] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:38:10] [main] INFO  com.revature.listeners.TestListener - validUsernameInvalidPassword passed
+[Aug 18 2022 - 11:39:52] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:39:52] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:39:57] [main] INFO  com.revature.listeners.TestListener - runScenario passed
+[Aug 18 2022 - 11:39:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:39:58] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:00] [main] INFO  com.revature.listeners.TestListener - runScenario passed
+[Aug 18 2022 - 11:40:01] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:40:01] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:03] [main] INFO  com.revature.listeners.TestListener - invalidUsernameInvalidPassword passed
+[Aug 18 2022 - 11:40:04] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:40:04] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:06] [main] INFO  com.revature.listeners.TestListener - invalidUsernameValidPassword passed
+[Aug 18 2022 - 11:40:07] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:40:07] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:09] [main] INFO  com.revature.listeners.TestListener - validLogin passed
+[Aug 18 2022 - 11:40:10] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:40:10] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:12] [main] INFO  com.revature.listeners.TestListener - validLogin2 passed
+[Aug 18 2022 - 11:40:13] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:40:13] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:15] [main] INFO  com.revature.listeners.TestListener - validLogin3 passed
+[Aug 18 2022 - 11:40:16] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[Aug 18 2022 - 11:40:16] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\revature\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[Aug 18 2022 - 11:40:19] [main] INFO  com.revature.listeners.TestListener - validUsernameInvalidPassword passed

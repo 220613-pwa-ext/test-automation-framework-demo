@@ -5,9 +5,23 @@
         <listener class-name="com.revature.listeners.TestListener" />
     </listeners>
 
-    <test name="Regression">
+    <!-- 2 scenarios, 2 test cases -->
+    <test name="Cucumber Tests">
+        <classes>
+            <class name="com.revature.testcases.TestRunner"></class>
+        </classes>
+    </test>
+
+    <!-- 6 @Test methods, 6 test cases -->
+    <test name="Traditional TestNG @Test tests">
         <classes>
             <class name="com.revature.testcases.LoginTests"></class>
+        </classes>
+    </test>
+
+    <!-- Instead of Selenium, these test cases will be utilizing Appium -->
+    <test name="mobile app tests">
+        <classes>
         </classes>
     </test>
 </suite>

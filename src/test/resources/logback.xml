@@ -29,7 +29,7 @@
     <root level="info"> <!-- We want to only log messages that are INFO or more important (INFO, WARN, ERROR), we ignore TRACE and DEBUG-->
         <appender-ref ref="my_console_appender" />
         <appender-ref ref="my_file_appender" />
-        <appender-ref ref="my_db_appender" />
+<!--        <appender-ref ref="my_db_appender" />-->
     </root>
 
 </configuration>

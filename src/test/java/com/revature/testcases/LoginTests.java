@@ -45,7 +45,7 @@ public class LoginTests {
     @Test
     public void validLogin() {
         // Step 1: go to login page
-        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
+        driver.get("http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/");
 
         // Step 2: Enter username and password
         LoginPage loginPage = new LoginPage(driver);
@@ -63,14 +63,14 @@ public class LoginTests {
         wdw.until(ExpectedConditions.urlContains("success.html"));
 
         String actual = driver.getCurrentUrl();
-        String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
+        String expected = "http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/success.html";
         Assert.assertEquals(actual, expected);
     }
 
     @Test
     public void validLogin2() {
         // Step 1: go to login page
-        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
+        driver.get("http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/");
 
         // Step 2: Enter username and password
         LoginPage loginPage = new LoginPage(driver);
@@ -88,14 +88,14 @@ public class LoginTests {
         wdw.until(ExpectedConditions.urlContains("success.html"));
 
         String actual = driver.getCurrentUrl();
-        String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
+        String expected = "http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/success.html";
         Assert.assertEquals(actual, expected);
     }
 
     @Test
     public void validLogin3() {
         // Step 1: go to login page
-        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/");
+        driver.get("http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/");
 
         // Step 2: Enter username and password
         LoginPage loginPage = new LoginPage(driver);
@@ -113,13 +113,13 @@ public class LoginTests {
         wdw.until(ExpectedConditions.urlContains("success.html"));
 
         String actual = driver.getCurrentUrl();
-        String expected = "http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com/success.html";
+        String expected = "http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/success.html";
         Assert.assertEquals(actual, expected);
     }
 
     @Test
     public void validUsernameInvalidPassword() {
-        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
+        driver.get("http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/");
 
         LoginPage loginPage = new LoginPage(driver);
 
@@ -128,11 +128,7 @@ public class LoginTests {
 
         loginPage.clickLoginButton();
 
-        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='error-message']/p")));
-
-        WebElement errorMessageParagraph = driver.findElement(By.xpath("//*[@id='error-message']/p"));
-        String actual = errorMessageParagraph.getText();
+        String actual = loginPage.getErrorMessageParagraphText();
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
@@ -140,7 +136,7 @@ public class LoginTests {
 
     @Test
     public void invalidUsernameInvalidPassword() {
-        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
+        driver.get("http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/");
 
         LoginPage loginPage = new LoginPage(driver);
 
@@ -149,11 +145,7 @@ public class LoginTests {
 
         loginPage.clickLoginButton();
 
-        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='error-message']/p")));
-
-        WebElement errorMessageParagraph = driver.findElement(By.xpath("//*[@id='error-message']/p"));
-        String actual = errorMessageParagraph.getText();
+        String actual = loginPage.getErrorMessageParagraphText();
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
@@ -161,7 +153,7 @@ public class LoginTests {
 
     @Test
     public void invalidUsernameValidPassword() {
-        driver.get("http://ec2-18-116-32-53.us-east-2.compute.amazonaws.com");
+        driver.get("http://ec2-18-191-141-71.us-east-2.compute.amazonaws.com/");
 
         LoginPage loginPage = new LoginPage(driver);
 
@@ -170,11 +162,7 @@ public class LoginTests {
 
         loginPage.clickLoginButton();
 
-        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='error-message']/p")));
-
-        WebElement errorMessageParagraph = driver.findElement(By.xpath("//*[@id='error-message']/p"));
-        String actual = errorMessageParagraph.getText();
+        String actual = loginPage.getErrorMessageParagraphText();
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
